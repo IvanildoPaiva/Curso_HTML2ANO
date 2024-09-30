@@ -1,0 +1,173 @@
+/*Resetar o CSS padrão*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* definindo as cores por meio de variáveis */
+:root{
+  --color--header:#122523;
+  --color--link:#FEB220;
+  --color-btn-saiba-mais:#0a7cf7;
+
+}
+
+
+.menu-nav{
+  background-color:var(--color--header);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+}
+
+.menu-nav .menu{
+  display: flex;
+}
+
+
+.menu-nav .menu li{
+
+  list-style: none;
+  padding-right: 10px;
+
+}
+
+.menu-nav .menu li a{
+text-decoration: none;
+color: var(--color--link);
+text-transform: uppercase;
+padding: 20px;
+
+}
+
+.menu-nav .menu li a:hover{
+
+  background-color: #d4d0d0;
+  color: #000;
+  transition: all 0.4s ease-in-out; 
+}
+
+/* Cerquilha = ID*/
+#cabecalho img{
+width: 100%;
+height: 400px;
+	
+}
+
+/* ponto = class*/
+.cards{
+  width: 100%;
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+#card01 img{
+  width: 200px;
+  border-radius: 5px;
+  
+}
+#card01{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+#card02 img{
+width: 200px;
+border-radius: 5px;
+}
+#card02{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#card03 img{
+width: 200px;
+border-radius: 5px;
+
+}
+
+#card03{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* estado do botão nomal */
+.btn{
+background-color: var(--color-btn-saiba-mais);
+margin:5px;
+padding: 5px;
+outline: none;
+border: none;
+border-radius: 5px;
+color: #fff;
+cursor: pointer ;
+}
+
+/* estado do botão quando passar o mouse */
+.btn:hover{
+  background-color: #98c8fb;
+  transition: all 0.4s ease-in-out; 
+}
+
+
+.cards-depoimentos{
+  width: 100%;
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  
+}
+
+#depoimento01 img{
+  width: 300px;
+  border-radius: 5px;
+  
+}
+
+#depoimento01{
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+
+}
+#depoimento02 img{
+  width: 300px;
+  border-radius: 5px;
+}
+
+#depoimento02{
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+#depoimento03 img{ 
+  width: 300px;
+  border-radius: 5px;
+}
+
+#depoimento03{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
+#depoimento01 span{
+text-align: center;
+
+}
+
+#depoimento01 h3{
+  margin: 20px 0;
+}
